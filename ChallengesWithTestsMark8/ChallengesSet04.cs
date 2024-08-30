@@ -81,8 +81,14 @@ namespace ChallengesWithTestsMark8
             {
                 fact *= i;
             }
-
+            if (number < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+            
             return fact;
+
+            
         }
     }
 }
